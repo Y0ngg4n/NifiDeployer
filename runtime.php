@@ -29,9 +29,11 @@ $CSS_WEB_PATH = $WEB_ROOT_PATH . "/css";
 
 
 require __DIR__ . '/vendor/autoload.php';
-require $CONTROLLER_DIR . "/DBManager.php";
 
+if (!isset($DBManager)) {
+    require $CONTROLLER_DIR . "/DBManager.php";
 
-$DBManager = new DBManager($CONF_DIR, "config.ini.php");
-$DBManager->createTables();
-$DBManager->createPhpAuthTables();
+    $DBManager = new DBManager($CONF_DIR, "config.ini.php");
+    $DBManager->createTables();
+    $DBManager->createPhpAuthTables();
+}

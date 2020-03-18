@@ -4,9 +4,6 @@ class ServerRequests
 {
     protected $DBManager = null;
 
-    /**
-     * ServerRequests constructor.
-     */
     public function __construct($DBManager)
     {
         $this->DBManager = $DBManager;

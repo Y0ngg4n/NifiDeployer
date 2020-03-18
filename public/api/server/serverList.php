@@ -4,5 +4,3 @@ include $CONTROLLER_DIR . "/requests/server.php";
 
 $result = (new ServerRequests($DBManager))->fetchServerList($_GET['searchWord'] ?? "test");
 echo json_encode($result);
-
-

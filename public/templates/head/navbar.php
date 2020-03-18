@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="../index.php">Servers</a>
+                    <a class="nav-link" href=""<?=$WEB_ROOT_PATH?>/index.php">Servers</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Templates</a>

@@ -15,6 +15,7 @@ include $CONTROLLER_DIR . "/requests/server.php";
     </header>
 
     <div id="content" class="container">
+        <h1 class="text-center">Add Server</h1>
         <form method="post">
             <div class="col text-center">
                 <input class="form-control" placeholder="Servername" type="text" name="serverName"/>
