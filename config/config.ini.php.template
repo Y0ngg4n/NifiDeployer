@@ -1,0 +1,12 @@
+[Database]
+mode=pgsql
+host=localhost
+port=26257
+dbname=nifideployer
+username=nifideployer
+password=GENERATED_PASSWORD
+sslcert=certs/client.nifideployer.crt
+sslkey=certs/client.nifideployer.key
+pgsqlPHPAuthFile=PHP-Auth/PostgreSQL.sql
+mysqlPHPAuthFile=PHP-Auth/MySQL.sql
+sqlitePHPAuthFile=PHP-Auth/SQLite.sql
